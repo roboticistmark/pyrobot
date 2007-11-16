@@ -19,13 +19,21 @@ Sugar consumes a lot of resources. Since Fido doesn't need it, it's convenient t
 
 = Networking =
 
-I have been unable to get NetworkManager to work successfully. I recommend disabling NetworkManger in /etc/rc3.d and enabling the network rc by renaming K98network to S30network. Following that, configure wireless to connect to your network:
+I have been unable to get NetworkManager to work successfully. I recommend disabling NetworkManger and enabling the standard network script:
+
+{{{
+root$ cd /etc/rc3.d
+root$ mv S98NetworkManager K98NetworkManager
+root$ mv K90network S90network
+}}}
+
+Next, configure wireless to connect to your network:
 
 {{{
 root$ vi /etc/sysconfig/network-scripts/ifcfg-eth0
 }}}
 
-Change/add:
+Make the following changes and additions:
 
 {{{
 ONBOOT=yes
@@ -34,13 +42,15 @@ ESSID="your_ssid"
 KEY="your_wep_key"
 }}}
 
-Then to test it:
+Then test it:
 
 {{{
 root$ /etc/init.d/NetworkManager stop
 root$ ifup eth0
 root$ ifconfig
 }}}
+
+You might also want to reboot and make sure your network starts up automatically.
 
 
 = SSH =
