@@ -3,7 +3,18 @@
 
 These are the steps I've taken to configure the OLPC for Fido development.
 
+= OLPC Builds =
+
+My OLPC is a B2-7 which falls under the classification of a B2-1 system. So, it's recommended that I use the 406.15 build. However, I've had reasonable success with build 623. I am using the later builds because they contain drivers for the Arduino USB-to-serial chipset.
+
+It's important to pick a stable build as opposed to a development build if you want to build kernel modules. The kernel-devel packages for the various stable builds are available here: http://dev.laptop.org/~dilinger/stable/
+
 
 = Disable Sugar in /etc/inittab =
 
 Sugar consumes a lot of resources. Since Fido doesn't need it, it's convenient to change the default run level in /etc/inittab to 3 instead of 5.
+
+
+= Networking =
+
+I have been unable to get NetworkManager to work successfully. I recommend disabling NetworkManger in /etc/rc3.d and enabling the network rc by renaming K98network to S30network. Following that, configure wireless to connect to your network.
