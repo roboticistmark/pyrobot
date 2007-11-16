@@ -48,7 +48,6 @@ root$ ifconfig
 First give root and olpc a password from the developer console.
 
 {{{
-login: root
 root$ passwd
 root$ passwd olpc
 }}}
