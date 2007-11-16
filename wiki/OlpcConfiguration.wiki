@@ -1,12 +1,9 @@
-#summary OLPC configuration steps taken for project [http://damonkohler.blogspot.com/search/label/fido Fido].
+#summary OLPC configuration steps taken for project Fido.
 #labels Featured,Phase-Deploy
-
-= Introduction =
 
 These are the steps I've taken to configure the OLPC for Fido development.
 
 
-= Disable Sugar in /etc/inittab =
+== Disable Sugar in /etc/inittab ==
 
 Sugar consumes a lot of resources. Since Fido doesn't need it, it's convenient to change the default run level in /etc/inittab to 3 instead of 5.
-
