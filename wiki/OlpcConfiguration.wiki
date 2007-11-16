@@ -5,6 +5,8 @@ These are the steps I've taken to configure the OLPC for Fido development.
 
 = OLPC Builds =
 
+See [http://wiki.laptop.org/go/Autoreinstallation_image how to update] on http://wiki.laptop.org.
+
 My OLPC is a B2-7 which falls under the classification of a B2-1 system. So, it's recommended that I use the 406.15 build. However, I've had reasonable success with build 623. I am using the later builds because they contain drivers for the Arduino USB-to-serial chipset.
 
 It's important to pick a stable build as opposed to a development build if you want to build kernel modules. The kernel-devel packages for the various stable builds are available here: http://dev.laptop.org/~dilinger/stable/
