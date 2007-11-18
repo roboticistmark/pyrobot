@@ -3,6 +3,8 @@
 
 In order to support the QuickCam Orbit, UVC must be installed on the OLPC. I have compiled a version for kernel 2.6.22-20071105.1.olpc.c97f1348f3114fa that's available in the downloads section.
 
+= Quick Start =
+
 {{{
 scp uvcvideo.ko root@olpc:/lib/modules/2.6.22-20071105.1.olpc.c97f1348f3114fa/kernel/drivers/usb/class
 
