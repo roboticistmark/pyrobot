@@ -62,4 +62,11 @@ root$ passwd
 root$ passwd olpc
 }}}
 
-Now you should be able to SSH. It's also nice to set up SSH keys to avoid having to type your password.
+Now you should be able to SSH. It's also nice to distribute SSH keys to avoid having to type your password:
+
+{{{
+root$ mkdir ~root/.ssh
+root$ mkdir ~olpc/.ssh
+root$ cat ~root/id_rsa.pub >> ~root/.ssh/authorized_keys
+root$ cat ~root/id_rsa.pub >> ~olpc/.ssh/authorized_keys
+}}}
