@@ -11,6 +11,8 @@ My OLPC is a B2-7 which falls under the classification of a B2-1 system. So, it'
 
 It's important to pick a stable build as opposed to a development build if you want to build kernel modules. The kernel-devel packages for the various stable builds are available here: http://dev.laptop.org/~dilinger/stable/
 
+I was unable to find the devel package for the kernel used in build 623, so I [http://wiki.laptop.org/go/Kernel installed] kernel-2.6.22-20071105.1.olpc.c97f1348f3114fa and then used its kernel-devel counterpart to compile the UvcModule.
+
 
 = Disable Sugar in /etc/inittab =
 
