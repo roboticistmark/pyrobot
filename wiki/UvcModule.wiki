@@ -8,3 +8,8 @@ scp uvcvideo.ko root@olpc:/lib/modules/2.6.22-20071105.1.olpc.c97f1348f3114fa/ke
 
 root$ depmod && modprobe uvcvideo
 }}}
+
+
+= Compiling =
+
+To compile the module, I extracted the kernel-devel package, then pointed the Makefile toward the extracted source.
