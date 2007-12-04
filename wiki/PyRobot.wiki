@@ -1,8 +1,4 @@
-#labels Phase-Design
-PyRobot is a high-level Python interface, built on [http://pyserial.sourceforge.net/ pySerial], to iRobot's Roomba and Create.
-
-PyRobot is also the name of another Python robotics library formerly known as [http://pyrorobotics.org/ Pyro].
-
+#labels Phase-Design,Featured
 PyRobot was originally created for this [http://www.instructables.com/id/ENNF6R6F6B7STLM/ instructable] for using the Create and an OLPC for telepresence. Since then, the telepresence project has become project Fido. Fido uses a [http://code.google.com/p/getshitdone GSD] web interface for controlling the Create/Roomba over the internet.
 
 Fido Features
