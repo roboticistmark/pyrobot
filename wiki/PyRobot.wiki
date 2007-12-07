@@ -1,4 +1,6 @@
+#summary Basic overview of the project including goals and non-goals.
 #labels Phase-Design,Featured
+
 PyRobot was originally created for this [http://www.instructables.com/id/ENNF6R6F6B7STLM/ instructable] for using the Create and an OLPC for telepresence. Since then, the telepresence project has become project Fido. Fido uses a [http://code.google.com/p/getshitdone GSD] web interface for controlling the Create/Roomba over the internet.
 
 Fido Features
