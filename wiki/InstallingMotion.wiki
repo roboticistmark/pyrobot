@@ -1,1 +1,11 @@
-#summary How to install motion on the OLPC.
+#summary How to install Motion on the OLPC.
+#labels Phase-Deploy,Featured
+
+Since yum is intolerably slow on the OLPC and I haven't been able to find a good repository for packages, I hacked up a tarball for [http://www.lavrsen.dk/twiki/bin/view/Motion/WebHome Motion] from the apt package on my Ubuntu Gusty box. It's available in the downloads section.
+
+= Steps to build tarball =
+
+  # Install the latest stable version of [http://www.lavrsen.dk/twiki/bin/view/Motion/WebHome Motion].
+  # Create a directory to store the tarball (i.e. {{{mkdir ~/motion}}})
+  # Copy the libraries listed by {{{$ /lib/ld-linux.so.2 --list $(which motion)}}} into {{{~/motion}}}.
+  # Use the {{{go}}} script in the motion tarball to start up motion with the correct {{{LD_LIBRARY_PATH}}}.
