@@ -7,5 +7,5 @@ Since yum is intolerably slow on the OLPC and I haven't been able to find a good
 
   # Install the latest stable version of [http://www.lavrsen.dk/twiki/bin/view/Motion/WebHome Motion].
   # Create a directory to store the tarball (i.e. {{{mkdir ~/motion}}})
-  # Copy the libraries listed by {{{$ /lib/ld-linux.so.2 --list $(which motion)}}} into {{{~/motion}}}.
+  # Copy the libraries listed by {{{/lib/ld-linux.so.2 --list $(which motion)}}} into {{{~/motion}}}.
   # Use the {{{go}}} script in the motion tarball to start up motion with the correct {{{LD_LIBRARY_PATH}}}.
