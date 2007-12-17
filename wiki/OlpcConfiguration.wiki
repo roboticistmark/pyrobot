@@ -54,6 +54,17 @@ root$ ifconfig
 
 You might also want to reboot and make sure your network starts up automatically.
 
+I've found that the network connection can die on occasion and will not come back automatically. So, I also have a script in my root crontab that runs every 10 minutes to keep the network connection alive.
+
+{{{
+#!/bin/bash
+
+ping -c 1 -w 1 router && exit 0
+
+ifdown eth0
+ifup eth0
+}}}
+
 
 = SSH =
 
