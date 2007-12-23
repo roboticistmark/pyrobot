@@ -12,6 +12,8 @@ Since yum is intolerably slow on the OLPC and I haven't been able to find a good
 
 = Quirks/Ugliness =
 
-I haven't been able to prevent motion from generating movies when it detects motion. Since space is at a bit of a premium on the OLPC, I set up a crontab to delete {{{/tmp/motion}}} every 10 minutes ({{{*/10 * * * * rm -rf /tmp/motion}}}).
+~~I haven't been able to prevent motion from generating movies when it detects motion. Since space is at a bit of a premium on the OLPC, I set up a crontab to delete {{{/tmp/motion}}} every 10 minutes ({{{*/10 * * * * rm -rf /tmp/motion}}}).~~
+
+The [http://www.lavrsen.dk/twiki/bin/view/Motion/FrequentlyAskedQuestions#How_do_I_disable_or_enable_makin Motion wiki] explains how to disable generating movie files when motion is detected.
 
 Also, I haven't been able to make permission changes to {{{/dev/video*}}} devices permanent even with changes to {{{/etc/udev/rules.d/*}}}. So, I run Motion as root.
